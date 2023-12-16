@@ -1,0 +1,115 @@
+/*#region page*/
+body {
+  color: #2E2F42;/*цвет букаф*/
+  background-color: #FFFFFF;/*цвет фона*/
+  font-family: 'Roboto','Raleway', sans-serif;
+  font-weight: 400; /*font-weight встановлює товщину шрифта.*/
+  font-size: 16px;
+  line-height: 1.5;/*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
+  letter-spacing: 2%;/*letter-spacing визначає інтервал між символами в межах елемента.*/
+}
+h1, h2 {
+  font-weight: 700;
+  text-align: center;/*поставить заголовок по центру*/
+  letter-spacing: 2%;/*letter-spacing визначає інтервал між символами в межах елемента.*/
+}
+h1{
+  color: #FFFFFF;
+font-size: 56px;
+line-height: 1.071;
+}
+h2 {
+  font-size: 36px;
+  line-height: 1.111;
+}
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1,2;
+  letter-spacing: 2%;/*letter-spacing визначає інтервал між символами в межах елемента.*/
+}
+p{
+  color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,5;
+    letter-spacing: 2%;
+}
+
+
+/*#endregion*/
+/*#region header*/
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.166;
+  letter-spacing: 3%;
+    text-decoration: none;
+      color: #2E2F42;
+
+}
+
+.logocolortext {
+  color: #4D5AE5;
+}
+
+.page-nav{
+  list-style: none;/*отключить стили*/
+}
+.link {
+  text-decoration: none;/*отключить подчеркивание*/
+  color: #2E2F42;
+  font-size: 16px;
+  letter-spacing: 2%;/*letter-spacing визначає інтервал між символами в межах елемента.*/
+  line-height: 1.5;/*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
+  font-weight: 500; /*font-weight встановлює товщину шрифта.*/
+
+
+}
+.link:hover {/*смена цвета при наведении*/
+  color: #404BBF;
+}
+.link:focus {/*смена цвета tab*/
+  color: #404BBF;
+}
+.link:active {/*смена при клике*/
+  color: #404BBF;
+}
+address .link{
+    font-style: normal;/*устанавливает курсив либо наклонное написание текста*/
+    color: #434455;
+    font-weight: 400;/*font-weight встановлює товщину шрифта.*/
+}
+.button {
+  color: #FFFFFF;
+  background-color: #4D5AE5;
+  font-size: 16px;
+  letter-spacing: 4%;
+  /*letter-spacing визначає інтервал між символами в межах елемента.*/
+  line-height: 1,5;
+  /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
+  font-weight: 500;
+  cursor: pointer;
+  /*font-weight встановлює товщину шрифта.*/
+}
+.button:hover {
+  /*смена цвета при наведении*/
+  background-color:  #404BBF;
+}
+.order_service{
+  background-color: #2E2F42;
+}
+/*#endregion*/
+
+/*#region footer*/
+footer .logocolortexttwo{
+  color: #F4F4FD;
+}
+footer{
+  background-color: #2E2F42;
+}
+footer p{
+  color: #F4F4FD;
+}
+/*#endregion*/
