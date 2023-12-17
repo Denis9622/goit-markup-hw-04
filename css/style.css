@@ -39,7 +39,7 @@ h2 {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.li{
+.liclass{
   background-color: #FFFFFF;
 }
 
@@ -110,7 +110,7 @@ address .link {
 }
 .button:focus {
   /*смена цвета tab*/
-  color: #404BBF;
+  background-color: #404BBF;
 }
 .order_service {
   background-color: #2e2f42;
