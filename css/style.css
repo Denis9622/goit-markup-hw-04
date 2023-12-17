@@ -29,14 +29,14 @@ h2 {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1,2;
+  line-height: 1.2;
   letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
 }
 .paragraph {
   color: #434455;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1,5;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 .li{
@@ -98,7 +98,7 @@ address .link {
   font-size: 16px;
   letter-spacing: 0.04em;
   /*letter-spacing визначає інтервал між символами в межах елемента.*/
-  line-height: 1,5;
+  line-height: 1.5;
   /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   font-weight: 500;
   cursor: pointer;
