@@ -1,8 +1,8 @@
 /*#region page*/
 body {
-  color: #2e2f42; /*цвет букаф*/
+  color: #434455; /*цвет букаф*/
   background-color: #ffffff; /*цвет фона*/
-  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400; /*font-weight встановлює товщину шрифта.*/
   font-size: 16px;
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
@@ -12,45 +12,52 @@ h1,
 h2 {
   font-weight: 700;
   text-align: center; /*поставить заголовок по центру*/
-  letter-spacing: 2%; /*letter-spacing визначає інтервал між символами в межах елемента.*/
+  letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
 }
-h1 {
+.title {
   color: #ffffff;
   font-size: 56px;
-  line-height: 1.071;
+  line-height: 1.07;
 }
-h2 {
+.titletwo {
+  color: #2e2f42;
   font-size: 36px;
-  line-height: 1.111;
+  line-height: 1.11;
+  text-transform: capitalize;
 }
-h3 {
+.titlethree {
+  color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1, 2;
-  letter-spacing: 2%; /*letter-spacing визначає інтервал між символами в межах елемента.*/
+  line-height: 1,2;
+  letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
 }
-p {
+.paragraph {
   color: #434455;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1, 5;
-  letter-spacing: 2%;
+  line-height: 1,5;
+  letter-spacing: 0.02em;
+}
+.li{
+  background-color: #FFFFFF;
 }
 
 /*#endregion*/
 /*#region header*/
 .logo {
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.166;
-  letter-spacing: 3%;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-decoration: none;
-  color: #2e2f42;
+  color: #4d5ae5;
 }
 
-.logocolortext {
-  color: #4d5ae5;
+.colortext {
+  color: #2e2f42;
 }
 
 .page-nav {
@@ -60,7 +67,7 @@ p {
   text-decoration: none; /*отключить подчеркивание*/
   color: #2e2f42;
   font-size: 16px;
-  letter-spacing: 2%; /*letter-spacing визначає інтервал між символами в межах елемента.*/
+  letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   font-weight: 500; /*font-weight встановлює товщину шрифта.*/
 }
@@ -76,18 +83,22 @@ p {
   /*смена при клике*/
   color: #404bbf;
 }
+.address{
+font-style: normal;
+  /*устанавливает курсив либо наклонное написание текста*/
+}
 address .link {
-  font-style: normal; /*устанавливает курсив либо наклонное написание текста*/
   color: #434455;
   font-weight: 400; /*font-weight встановлює товщину шрифта.*/
 }
 .button {
+  font-family: "Roboto", sans-serif;
   color: #ffffff;
   background-color: #4d5ae5;
   font-size: 16px;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
   /*letter-spacing визначає інтервал між символами в межах елемента.*/
-  line-height: 1, 5;
+  line-height: 1,5;
   /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   font-weight: 500;
   cursor: pointer;
@@ -97,19 +108,28 @@ address .link {
   /*смена цвета при наведении*/
   background-color: #404bbf;
 }
+.button:focus {
+  /*смена цвета tab*/
+  color: #404BBF;
+}
 .order_service {
   background-color: #2e2f42;
 }
 /*#endregion*/
 
+.section-our-team{
+  background-color: #F4F4FD;
+}
+
+
 /*#region footer*/
-footer .logocolortexttwo {
+.footer .colortext {
   color: #f4f4fd;
 }
-footer {
+.footer {
   background-color: #2e2f42;
 }
-footer p {   
+.footer .paragraph {   
   color: #f4f4fd;
 }
 /*#endregion*/
