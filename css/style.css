@@ -19,8 +19,6 @@ img {
   width: 100%;
   max-width: 1158px; /*задать ширину*/
   margin: 0 auto;
-  padding-left: 141px;
-  padding-right: 141px;
 }
 .section {
   padding: 120px 0;
@@ -191,7 +189,7 @@ address .link {
 /*#endregion*/
 /* #region section2 */
 .sectiontwo .container {
-    padding: 120px 0;
+  padding: 120px 0;
 }
 .sectiontwo .page-nav {
   gap: 24px;
@@ -211,6 +209,8 @@ address .link {
 }
 
 .sectionthree .page-nav {
+  justify-content: center;
+  gap: 24px;
 }
 
 .sectionthree .titletwo {
@@ -227,10 +227,13 @@ address .link {
 }
 
 .liclass {
+  
   text-align: center;
   background-color: #ffffff;
 }
-
+.sectionthree .liclass:last-child {
+  margin-right: 0; /* У последнего изображения нет отступа справа */
+}
 /*#endregion*/
 /* #region section4 */
 .sectionfour .page-nav {
@@ -244,18 +247,19 @@ address .link {
 }
 
 .sectionfour .titlethree {
+    border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
   padding-top: 32px;
 }
 
 .sectionfour .paragraph {
+    border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
   margin-top: 8px;
   margin-bottom: 32px;
 }
-.border {
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-}
+
 .sectionfour .titletwo {
   margin-bottom: 72px;
 }
@@ -263,7 +267,7 @@ address .link {
 
 /*#region footer*/
 .footer .container {
-  padding-top: 100px;
+  padding: 100px 0 0 0;
   background-color: #2e2f42;
 }
 
