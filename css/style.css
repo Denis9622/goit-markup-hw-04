@@ -1,5 +1,6 @@
 /*#region page*/
 body {
+  margin: 0;
   color: #434455; /*цвет букаф*/
   background-color: #ffffff; /*цвет фона*/
   font-family: 'Roboto', sans-serif;
@@ -8,45 +9,85 @@ body {
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   letter-spacing: 2%; /*letter-spacing визначає інтервал між символами в межах елемента.*/
 }
+
+img {
+  display: block; /*убрать нижний отступ у всех изо в проєкте, сделать картинку блоковой*/
+  max-width: 100%; /* Зображення буде автоматично підлаштовуватися під ширину батьківського елемента. */
+}
+
+.container /*обернуть елементы в блок*/ {
+  width: 100%;
+  max-width: 1158px; /*задать ширину*/
+  margin: 0 auto;
+  padding-left: 141px;
+  padding-right: 141px;
+}
+.section {
+  padding: 120px 0;
+}
+
+ul {
+  /*сбросить отступы и стили у всех ссылок*/
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 h1,
 h2 {
+  /*сбросить отступы у всех h1,2 и общие паметры*/
   font-weight: 700;
   text-align: center; /*поставить заголовок по центру*/
   letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
+  margin: 0;
 }
-.title {
-  color: #ffffff;
-  font-size: 56px;
-  line-height: 1.07;
+
+.page-nav {
+  display: flex;
+  gap: 40px;
 }
+
 .titletwo {
+  /*сбросить отступы у всех h2*/
   color: #2e2f42;
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
+  margin: 0;
 }
+
 .titlethree {
+  /*сбросить отступы у всех h3*/
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
+  margin: 0;
 }
+
 .paragraph {
+  /*сбросить отступы у всех p*/
   color: #434455;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-.liclass{
-  background-color: #FFFFFF;
+  margin: 0;
 }
 
 /*#endregion*/
 /*#region header*/
+.page-header .container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px /* width */ solid /* style */ #e7e9fc;
+}
+
 .logo {
-  font-family: "Raleway", sans-serif;
+  padding: 24px 0;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
@@ -60,76 +101,180 @@ h2 {
   color: #2e2f42;
 }
 
-.page-nav {
-  list-style: none; /*отключить стили*/
-}
-.link {
-  text-decoration: none; /*отключить подчеркивание*/
+.page-nav .link {
   color: #2e2f42;
   font-size: 16px;
   letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   font-weight: 500; /*font-weight встановлює товщину шрифта.*/
+  text-decoration: none; /*убрать подчеркивание*/
 }
+
+.menu {
+  margin-left: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .link:hover {
   /*смена цвета при наведении*/
   color: #404bbf;
 }
+
 .link:focus {
   /*смена цвета tab*/
   color: #404bbf;
 }
+
 .link:active {
   /*смена при клике*/
   color: #404bbf;
 }
-.address{
-font-style: normal;
+
+.address {
+  margin-left: 332px;
+  padding: 24px 0;
+  font-style: normal;
   /*устанавливает курсив либо наклонное написание текста*/
 }
+
 address .link {
   color: #434455;
   font-weight: 400; /*font-weight встановлює товщину шрифта.*/
 }
+
+/*#endregion*/
+
+/* #region section1 */
+.sectionone .container {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #2e2f42;
+}
+
+.title {
+  padding-bottom: 48px;
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 1.07;
+}
+
 .button {
-  font-family: "Roboto", sans-serif;
+  padding: 16px 32px; /* Задайте необходимые отступы вокруг текста кнопки */
+  cursor: pointer;
+  font-size: 16px;
+
+  font-family: 'Roboto', sans-serif;
   color: #ffffff;
   background-color: #4d5ae5;
   font-size: 16px;
-  letter-spacing: 0.04em;
-  /*letter-spacing визначає інтервал між символами в межах елемента.*/
-  line-height: 1.5;
-  /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
+  letter-spacing: 0.04em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
+  line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   font-weight: 500;
-  cursor: pointer;
-  /*font-weight встановлює товщину шрифта.*/
+  cursor: pointer; /*font-weight встановлює товщину шрифта.*/
 }
+
 .button:hover {
   /*смена цвета при наведении*/
   background-color: #404bbf;
 }
+
 .button:focus {
   /*смена цвета tab*/
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
-.order_service {
-  background-color: #2e2f42;
+
+/*#endregion*/
+/* #region section2 */
+.sectiontwo .container {
+    padding: 120px 0;
+}
+.sectiontwo .page-nav {
+  gap: 24px;
+}
+.sectiontwo .paragraph {
+  padding-top: 8px;
+}
+.sectiontwo h2 {
+  display: none;
 }
 /*#endregion*/
 
-.section-our-team{
-  background-color: #F4F4FD;
+/* #region section3 */
+.sectionthree .container {
+  background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
+.sectionthree .page-nav {
+}
+
+.sectionthree .titletwo {
+  padding-bottom: 72px;
+}
+
+.sectionthree .titlethree {
+  padding-top: 32px;
+}
+
+.sectionthree .paragraph {
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.liclass {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/*#endregion*/
+/* #region section4 */
+.sectionfour .page-nav {
+  flex-wrap: wrap;
+  justify-content: center; /* Центрирование по горизонтали */
+  gap: 24px;
+}
+
+.sectionfour .container {
+  padding: 120px 0;
+}
+
+.sectionfour .titlethree {
+  padding-top: 32px;
+}
+
+.sectionfour .paragraph {
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+.border {
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+}
+.sectionfour .titletwo {
+  margin-bottom: 72px;
+}
+/*#endregion*/
 
 /*#region footer*/
+.footer .container {
+  padding-top: 100px;
+  background-color: #2e2f42;
+}
+
 .footer .colortext {
   color: #f4f4fd;
 }
-.footer {
-  background-color: #2e2f42;
-}
-.footer .paragraph {   
+
+.footer .paragraph {
+  width: 264px;
+  padding-top: 16px;
+  padding-bottom: 100px;
   color: #f4f4fd;
 }
 /*#endregion*/
