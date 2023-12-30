@@ -270,7 +270,6 @@ h2 {
   column-gap: 24px;
   row-gap: 48px;
 }
-
 .border {
   width: calc((100% - 48px) / 3);
 }
