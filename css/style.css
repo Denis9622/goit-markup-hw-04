@@ -22,6 +22,19 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+.visually-hidden {
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 ul {
   /*сбросить отступы и стили у всех ссылок*/
@@ -99,6 +112,7 @@ h2 {
 .link_li {
   padding: 24px 0;
 }
+
 .logo {
   margin-right: 76px;
   font-family: 'Raleway', sans-serif;
@@ -110,20 +124,22 @@ h2 {
   text-decoration: none;
   color: #4d5ae5;
 }
-.contacts {
-}
-.contactslist {
-  display: flex;
-  gap: 40px;
+.address {
   font-style: normal; /*устанавливает курсив либо наклонное написание текста*/
 }
-
-.contacts .link {
+.address_contacts_list {
+  display: flex;
+  gap: 40px;
+}
+.address_list_item {
+}
+.address_list_link {
+  text-decoration: none; /*убрать подчеркивание*/
   color: #434455;
   font-weight: 400; /*font-weight встановлює товщину шрифта.*/
-}
-.contacts .link:last-child {
-  margin-right: 0; /* У последнего изображения нет отступа справа */
+  font-size: 16px;
+  letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
+  line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
 }
 
 .link {
@@ -133,6 +149,22 @@ h2 {
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   font-weight: 500; /*font-weight встановлює товщину шрифта.*/
   text-decoration: none; /*убрать подчеркивание*/
+}
+.address_contacts_list:last-child {
+  margin-right: 0; /* У последнего изображения нет отступа справа */
+}
+
+.address_list_link:hover {
+  /*смена цвета при наведении*/
+  color: #404bbf;
+}
+.address_list_link:focus {
+  /*смена цвета при наведении*/
+  color: #404bbf;
+}
+.address_list_link:active {
+  /*смена при клике*/
+  color: #404bbf;
 }
 
 .link:hover {
@@ -214,20 +246,6 @@ h2 {
 
 .menu-item-sectiontwo {
   width: calc((100% - 72px) / 4);
-}
-
-.sectiontwo .visually-hidden {
-  display: none;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /*#endregion*/
