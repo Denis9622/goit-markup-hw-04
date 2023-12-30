@@ -19,9 +19,8 @@ img {
   width: 100%;
   max-width: 1158px; /*задать ширину*/
   margin: 0 auto;
-}
-.section {
-  padding: 120px 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 ul {
@@ -78,13 +77,27 @@ h2 {
 /*#endregion*/
 /*#region header*/
 .page-header .container {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.colortext {
+  color: #2e2f42;
+}
+
+.menu {
   display: flex;
   align-items: center;
-  border-bottom: 1px /* width */ solid /* style */ #e7e9fc;
+  padding: 24px 0;
+}
+
+.menu-item {
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
 }
 
 .logo {
-  padding: 24px 0;
+  margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -95,23 +108,27 @@ h2 {
   color: #4d5ae5;
 }
 
-.colortext {
-  color: #2e2f42;
+.address {
+  display: flex;
+  gap: 40px;
+  font-style: normal; /*устанавливает курсив либо наклонное написание текста*/
 }
 
-.page-nav .link {
+.address .link {
+  color: #434455;
+  font-weight: 400; /*font-weight встановлює товщину шрифта.*/
+}
+.address .link:last-child {
+  margin-right: 0; /* У последнего изображения нет отступа справа */
+}
+
+.link {
   color: #2e2f42;
   font-size: 16px;
   letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   font-weight: 500; /*font-weight встановлює товщину шрифта.*/
   text-decoration: none; /*убрать подчеркивание*/
-}
-
-.menu {
-  margin-left: 76px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .link:hover {
@@ -129,32 +146,19 @@ h2 {
   color: #404bbf;
 }
 
-.address {
-  margin-left: 332px;
-  padding: 24px 0;
-  font-style: normal;
-  /*устанавливает курсив либо наклонное написание текста*/
-}
-
-address .link {
-  color: #434455;
-  font-weight: 400; /*font-weight встановлює товщину шрифта.*/
-}
-
 /*#endregion*/
 
 /* #region section1 */
 .sectionone .container {
-  padding: 120px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: #2e2f42;
 }
 
 .title {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 496px; /*br можно не задавать если поставить макс ширину будет перенос строки*/
   padding-bottom: 48px;
   color: #ffffff;
   font-size: 56px;
@@ -162,18 +166,22 @@ address .link {
 }
 
 .button {
+  margin: 0 auto; /*можливості центрувати кнопку через властивість margin*/
+  display: block; /*display: block; для можливості центрувати кнопку через властивість margin*/
   padding: 16px 32px; /* Задайте необходимые отступы вокруг текста кнопки */
-  cursor: pointer;
+  cursor: pointer; /*для визначення типу курсору на кнопці*/
+  border-radius: 4px; /*для визначення заокруглень у кнопки*/
   font-size: 16px;
-
+  min-width: 169px; /*для визначення мінімальної ширини кнопки*/
+  height: 56px; /*для визначення висоти кнопки*/
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
   background-color: #4d5ae5;
   font-size: 16px;
   letter-spacing: 0.04em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
-  font-weight: 500;
-  cursor: pointer; /*font-weight встановлює товщину шрифта.*/
+  font-weight: 500; /*font-weight встановлює товщину шрифта.*/
+  border: none;
 }
 
 .button:hover {
@@ -191,15 +199,23 @@ address .link {
 .sectiontwo .container {
   padding: 120px 0;
 }
+
 .sectiontwo .page-nav {
   gap: 24px;
 }
-.sectiontwo .paragraph {
-  padding-top: 8px;
+
+.sectiontwo .titlethree {
+  margin-bottom: 8px;
 }
-.sectiontwo h2 {
+
+.menu-item-sectiontwo {
+  width: calc((100% - 72px) / 4);
+}
+
+.visually-hidden {
   display: none;
 }
+
 /*#endregion*/
 
 /* #region section3 */
@@ -208,56 +224,70 @@ address .link {
   padding: 120px 0;
 }
 
+.sectionthree .titletwo {
+  margin-bottom: 72px;
+}
+
+.sectionthree img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.liclass img {
+  width: 100%;
+}
+
 .sectionthree .page-nav {
-  justify-content: center;
   gap: 24px;
 }
 
-.sectionthree .titletwo {
-  padding-bottom: 72px;
+.containerworker {
+  padding: 32px 0;
 }
 
 .sectionthree .titlethree {
-  padding-top: 32px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .sectionthree .paragraph {
-  margin-top: 8px;
-  margin-bottom: 32px;
+  text-align: center;
 }
 
 .liclass {
-  
-  text-align: center;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
-.sectionthree .liclass:last-child {
-  margin-right: 0; /* У последнего изображения нет отступа справа */
-}
+/* .sectionthree .liclass:last-child {
+  margin-right: 0;  У последнего изображения нет отступа справа 
+} */
 /*#endregion*/
 /* #region section4 */
 .sectionfour .page-nav {
   flex-wrap: wrap;
   justify-content: center; /* Центрирование по горизонтали */
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.border {
+  width: calc((100% - 48px) / 3);
+}
+
+.containerapp {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .sectionfour .container {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .sectionfour .titlethree {
-    border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  padding-top: 32px;
-}
-
-.sectionfour .paragraph {
-    border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-  margin-top: 8px;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
 }
 
 .sectionfour .titletwo {
@@ -267,8 +297,12 @@ address .link {
 
 /*#region footer*/
 .footer .container {
-  padding: 100px 0 0 0;
+  padding: 100px 0;
   background-color: #2e2f42;
+}
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer .colortext {
@@ -277,8 +311,6 @@ address .link {
 
 .footer .paragraph {
   width: 264px;
-  padding-top: 16px;
-  padding-bottom: 100px;
   color: #f4f4fd;
 }
 /*#endregion*/
