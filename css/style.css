@@ -23,16 +23,8 @@ img {
   padding-right: 15px;
 }
 .visually-hidden {
-  display: none;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1;
-  border: 0;
-  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -132,6 +124,7 @@ h2 {
   gap: 40px;
 }
 .address_list_item {
+  padding: 24px 0;
 }
 .address_list_link {
   text-decoration: none; /*убрать подчеркивание*/
