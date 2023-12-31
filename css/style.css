@@ -9,6 +9,9 @@ body {
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   letter-spacing: 2%; /*letter-spacing визначає інтервал між символами в межах елемента.*/
 }
+a {
+  text-decoration: none;
+}
 
 img {
   display: block; /*убрать нижний отступ у всех изо в проєкте, сделать картинку блоковой*/
@@ -124,39 +127,28 @@ h2 {
   text-decoration: none;
   color: #4d5ae5;
 }
-.address {
-}
-
-.address-menu-item {
-  align-items: center;
-}
-
-.address-menu-list {
+.contacts-list {
   display: flex;
   gap: 40px;
 }
 
-.address-menu-link {
-  padding: 24px 0;
-
+.contacts-link {
   color: #434455;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none; /*убрать подчеркивание*/
 }
 
-.address-menu-link:hover {
+.contacts-list .contacts-link:hover {
   color: #404bbf;
 }
 
-.address-menu-link:focus {
+.contacts-list .contacts-link:focus {
   color: #404bbf;
 }
 
-.address-menu-link:active {
+.contacts-list .contacts-link:active {
   color: #404bbf;
 }
 
@@ -164,7 +156,10 @@ h2 {
   /*смена цвета при наведении*/
   color: #404bbf;
 }
-
+.contacts-menu {
+  font-style: normal;
+  margin-left: auto;
+}
 .link {
   text-decoration: none; /*убрать подчеркивание*/
 
