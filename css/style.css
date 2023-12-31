@@ -119,31 +119,31 @@ h2 {
 .address {
   font-style: normal; /*устанавливает курсив либо наклонное написание текста*/
 }
-.address_contacts_list {
+.address_list {
   display: flex;
   gap: 40px;
 }
 .address_list_item {
   padding: 24px 0;
+  font-size: 16px;
+  line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
+  letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
 }
 .address_list_link {
-  text-decoration: none; /*убрать подчеркивание*/
   color: #434455;
+
+  text-decoration: none; /*убрать подчеркивание*/
   font-weight: 400; /*font-weight встановлює товщину шрифта.*/
-  font-size: 16px;
-  letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
-  line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
 }
 
 .link {
   color: #2e2f42;
   font-size: 16px;
-  letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   font-weight: 500; /*font-weight встановлює товщину шрифта.*/
   text-decoration: none; /*убрать подчеркивание*/
 }
-.address_contacts_list:last-child {
+.address_list:last-child {
   margin-right: 0; /* У последнего изображения нет отступа справа */
 }
 
