@@ -23,8 +23,16 @@ img {
   padding-right: 15px;
 }
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
   white-space: nowrap;
   clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -117,21 +125,21 @@ h2 {
   color: #4d5ae5;
 }
 .address {
-  font-style: normal; /*устанавливает курсив либо наклонное написание текста*/
 }
-.address_list {
+.address-menu-list {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
-.address_list_item {
+.address-menu-list {
   padding: 24px 0;
+}
+.address-menu-link {
+  font-style: normal;
+  color: #434455;
   font-size: 16px;
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
-}
-.address_list_link {
-  color: #434455;
-
   text-decoration: none; /*убрать подчеркивание*/
   font-weight: 400; /*font-weight встановлює товщину шрифта.*/
 }
@@ -143,19 +151,16 @@ h2 {
   font-weight: 500; /*font-weight встановлює товщину шрифта.*/
   text-decoration: none; /*убрать подчеркивание*/
 }
-.address_list:last-child {
-  margin-right: 0; /* У последнего изображения нет отступа справа */
-}
 
-.address_list_link:hover {
+.address-menu-link:hover {
   /*смена цвета при наведении*/
   color: #404bbf;
 }
-.address_list_link:focus {
+.address-menu-link:focus {
   /*смена цвета при наведении*/
   color: #404bbf;
 }
-.address_list_link:active {
+.address-menu-link:active {
   /*смена при клике*/
   color: #404bbf;
 }
