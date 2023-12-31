@@ -9,6 +9,7 @@ body {
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   letter-spacing: 2%; /*letter-spacing визначає інтервал між символами в межах елемента.*/
 }
+
 a {
   text-decoration: none;
 }
@@ -38,7 +39,9 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+li {
+  list-style: none;
+}
 ul {
   /*сбросить отступы и стили у всех ссылок*/
   list-style: none;
@@ -81,7 +84,7 @@ h2 {
 }
 
 .paragraph {
-  /*сбросить отступы у всех  g p*/
+  /*сбросить отступы у всех p*/
   color: #434455;
   font-weight: 400;
   font-size: 16px;
@@ -92,12 +95,15 @@ h2 {
 
 /*#endregion*/
 /*#region header*/
-.page-header .container {
-  display: flex;
-}
 .page-header {
   border-bottom: 1px solid #e7e9fc;
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .colortext {
   color: #2e2f42;
 }
@@ -110,7 +116,15 @@ h2 {
 .menu-item {
   display: flex;
   gap: 40px;
-  margin-right: 332px;
+}
+
+.link {
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
+  font-weight: 500; /*font-weight встановлює товщину шрифта.*/
+  padding: 24px 0;
+  letter-spacing: 0.02em;
 }
 .link_li {
   padding: 24px 0;
@@ -127,6 +141,22 @@ h2 {
   text-decoration: none;
   color: #4d5ae5;
 }
+
+.link:hover {
+  /*смена цвета при наведении*/
+  color: #404bbf;
+}
+
+.link:focus {
+  /*смена цвета tab*/
+  color: #404bbf;
+}
+
+.link:active {
+  /*смена при клике*/
+  color: #404bbf;
+}
+
 .contacts-list {
   display: flex;
   gap: 40px;
@@ -152,30 +182,9 @@ h2 {
   color: #404bbf;
 }
 
-.link:hover {
-  /*смена цвета при наведении*/
-  color: #404bbf;
-}
 .contacts-menu {
   font-style: normal;
   margin-left: auto;
-}
-.link {
-  text-decoration: none; /*убрать подчеркивание*/
-
-  color: #2e2f42;
-  font-size: 16px;
-  line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
-  font-weight: 500; /*font-weight встановлює товщину шрифта.*/
-}
-.link:focus {
-  /*смена цвета tab*/
-  color: #404bbf;
-}
-
-.link:active {
-  /*смена при клике*/
-  color: #404bbf;
 }
 
 /*#endregion*/
@@ -191,7 +200,6 @@ h2 {
   text-align: center;
   margin: 0 auto;
   max-width: 496px; /*br можно не задавать если поставить макс ширину будет перенос строки*/
-  padding-bottom: 48px;
   color: #ffffff;
   font-size: 56px;
   line-height: 1.07;
@@ -214,6 +222,8 @@ h2 {
   line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
   font-weight: 500; /*font-weight встановлює товщину шрифта.*/
   border: none;
+
+  margin-top: 48px;
 }
 
 .button:hover {
