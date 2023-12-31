@@ -126,42 +126,37 @@ h2 {
 }
 .address {
 }
+
+.address-menu-item {
+}
+
 .address-menu-list {
   display: flex;
   gap: 40px;
   align-items: center;
 }
-.address-menu-list {
-  padding: 24px 0;
-}
+
 .address-menu-link {
-  font-style: normal;
   color: #434455;
   font-size: 16px;
-  line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
-  letter-spacing: 0.02em; /*letter-spacing визначає інтервал між символами в межах елемента.*/
-  text-decoration: none; /*убрать подчеркивание*/
-  font-weight: 400; /*font-weight встановлює товщину шрифта.*/
-}
-
-.link {
-  color: #2e2f42;
-  font-size: 16px;
-  line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
-  font-weight: 500; /*font-weight встановлює товщину шрифта.*/
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
   text-decoration: none; /*убрать подчеркивание*/
 }
 
 .address-menu-link:hover {
-  /*смена цвета при наведении*/
   color: #404bbf;
 }
+
 .address-menu-link:focus {
-  /*смена цвета при наведении*/
   color: #404bbf;
 }
+
 .address-menu-link:active {
-  /*смена при клике*/
   color: #404bbf;
 }
 
@@ -170,6 +165,14 @@ h2 {
   color: #404bbf;
 }
 
+.link {
+  text-decoration: none; /*убрать подчеркивание*/
+
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5; /*line-height рівномірне масштабування інтервалу між рядками при зміні розміру тексту, тут множитель */
+  font-weight: 500; /*font-weight встановлює товщину шрифта.*/
+}
 .link:focus {
   /*смена цвета tab*/
   color: #404bbf;
