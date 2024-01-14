@@ -214,9 +214,7 @@ h2 {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg); /*затемнение, градиент пишется первым поскольку накрывает*/
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    background-size: cover;/*щоб фонове зображення не розтягувалося*/
 }
 
 .title {
@@ -478,5 +476,6 @@ h2 {
   background-color: #31d0aa;
 }
 .svgiconfooter {
+  fill: #f4f4fd;
 }
 /*#endregion*/
