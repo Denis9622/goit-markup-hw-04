@@ -126,6 +126,7 @@ h2 {
   padding: 24px 0;
   letter-spacing: 0.02em;
 }
+
 .link_li {
   padding: 24px 0;
 }
@@ -187,13 +188,35 @@ h2 {
   margin-left: auto;
 }
 
+.underliningmenu {
+  position: relative;
+}
+.underliningmenu:hover::after {
+  position: absolute;
+  width: 100%; /*занимает 100% ширины родительского элемента, */
+  background-color: #404bbf;
+  content: ''; /*не задается контент*/
+  left: 0;
+  bottom: -1px; /*находится внизу на 1 пиксель от нижнего края родительского элемента*/
+  height: 4px; /*имеет высоту 4 пиксел*/
+  border-radius: 2px;
+  transform: translateX(-100);
+}
+
 /*#endregion*/
 
 /* #region section1 */
 .sectionone {
   padding-top: 188px;
   padding-bottom: 188px;
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg); /*затемнение, градиент пишется первым поскольку накрывает*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
@@ -242,6 +265,14 @@ h2 {
   padding: 120px 0;
 }
 
+.icon {
+  height: 112px; /*высота задана потому что ето декоративный елемент внутри которого иконки разные размеров оптимальный способ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+}
 .sectiontwo .page-nav {
   gap: 24px;
 }
@@ -291,6 +322,7 @@ h2 {
 
 .sectionthree .paragraph {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .liclass {
@@ -298,17 +330,51 @@ h2 {
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
-/* .sectionthree .liclass:last-child {
-  margin-right: 0;  У последнего изображения нет отступа справа 
-} */
+.linksocial {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.sociallink {
+  width: 40px;
+  height: 40px;
+}
+
+.linksociallink {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.linksociallink:hover {
+  background-color: #404bbf;
+}
+.linksociallink:focus {
+  background-color: #404bbf;
+}
+
+.svg {
+  fill: #f4f4fd;
+}
+
 /*#endregion*/
+
 /* #region section4 */
+
 .sectionfour .page-nav {
   flex-wrap: wrap;
   justify-content: center; /* Центрирование по горизонтали */
   column-gap: 24px;
   row-gap: 48px;
 }
+
 .border {
   width: calc((100% - 48px) / 3);
 }
@@ -331,6 +397,32 @@ h2 {
 .sectionfour .titletwo {
   margin-bottom: 72px;
 }
+
+.portfolio_text_wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio_cover_text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #f4f4fd;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.border:hover .portfolio_cover_text {
+  transform: translateY(0);
+}
 /*#endregion*/
 
 /*#region footer*/
@@ -351,5 +443,40 @@ h2 {
 .footer .paragraph {
   width: 264px;
   color: #f4f4fd;
+}
+
+.container-footer {
+  display: flex;
+  gap: 120px;
+}
+
+.linkssocialfooter {
+  display: flex;
+  gap: 16px;
+}
+
+.itemlinkfooter {
+  width: 40px;
+  height: 40px;
+}
+
+.linksociallinkfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.linksociallinkfooter:hover {
+  background-color: #31d0aa;
+}
+.linksociallinkfooter:focus {
+  background-color: #31d0aa;
+}
+.svgiconfooter {
 }
 /*#endregion*/
